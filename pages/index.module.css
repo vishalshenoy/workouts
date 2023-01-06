@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Overpass Mono", monospace;
+  src: url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff2)
+      format("woff2"),
+    url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main a:active {
+  text-decoration: none;
+  color: #192a56;
+}
+
+.main a:visited {
+  text-decoration: none;
+  color: #192a56;
+}
+
+.main a:hover {
+  text-decoration: none;
+  color: #192a56;
+  font-weight: lighter;
+}
+
+.main a:link {
+  text-decoration: none;
+  color: #192a56;
+}
+
+.main,
+.main input {
+  font-size: 16px;
+  line-height: 24px;
+  color: #353740;
+  font-family: "ColfaxAI", Helvetica, sans-serif;
+}
+
+.main select {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  color: #353740;
+  outline-color: #192a56;
+  border: 2px solid #192a56;
+  font-family: "ColfaxAI", Helvetica, sans-serif;
+  height: 50px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+.main .icon {
+  width: 34px;
+}
+
+.main h3 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #202123;
+  margin: 16px 0 40px;
+}
+.main form {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+.main input[type="text"],
+.main input[type="number"],
+.main select {
+  padding: 12px 16px;
+  border: 2px solid #192a56;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  outline-color: #192a56;
+}
+.main ::placeholder {
+  color: #8e8ea0;
+  opacity: 1;
+}
+.main input[type="submit"] {
+  padding: 10px 0;
+  color: #fff;
+  background-color: #192a56;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+.main .result {
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
