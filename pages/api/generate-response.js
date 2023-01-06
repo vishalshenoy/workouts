@@ -36,7 +36,6 @@ export default async function (req, res) {
     });
     x += 1;
     res.status(200).json({ result: completion.data.choices[0].text });
-    console.log("3");
   } catch (error) {
     // Consider adjusting the error handling logic for your use case
     if (error.response) {
@@ -56,7 +55,7 @@ export default async function (req, res) {
 }
 
 function generatePrompt(length, difficulty, location, goal) {
-  return `Give me a ${length}, ${difficulty} difficulty workout plan to do today at ${location} with the goal to ${goal}. Provide sets/reps/durations and a brief description for each exercise. Write this in paragraphs. Remove numbered lists.
+  return `In under 150 words, give me a ${length}, ${difficulty} difficulty workout plan to do today at ${location} with the goal to ${goal}. Provide sets/reps/durations and a brief description for each exercise. Write this in paragraphs. Remove numbered lists.
   `;
 }
 //npm run dev
