@@ -1,7 +1,7 @@
 import { Configuration, OpenAIApi } from "openai";
 
 var x = 0;
-var tokens = 180;
+var tokens = 150;
 
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
@@ -32,10 +32,11 @@ export default async function (req, res) {
       model: "text-davinci-003",
       prompt: prompt,
       temperature: 0.6,
-      max_tokens: tokens,
+      max_tokens: 500,
     });
     x += 1;
     res.status(200).json({ result: completion.data.choices[0].text });
+    console.log("3");
   } catch (error) {
     // Consider adjusting the error handling logic for your use case
     if (error.response) {
