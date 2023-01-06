@@ -98,8 +98,8 @@ export default function Home() {
             <center>
               <h4>generating workout plan...</h4>
               <h6>
-                NOTE: sometimes, an error is thrown due to OpenAI's limitations
-                with Vercel. please refresh the page and try again!
+                NOTE: sometimes, an error is thrown because the API call takes
+                too long. please refresh the page and try again!
               </h6>
               <img src="/test.gif" height="120" />
             </center>
