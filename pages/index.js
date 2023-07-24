@@ -112,7 +112,7 @@ export default function Home() {
           ></div>
         )}
         <h6>
-          made by <a href="https://vishalshenoy.me">vishal shenoy</a>
+          built by <a href="https://vishalshenoy.com">vishal</a>
         </h6>
       </main>
     </div>
